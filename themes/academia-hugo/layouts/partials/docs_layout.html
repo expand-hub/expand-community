@@ -29,6 +29,11 @@
             {{ .Content }}
           </div>
 
+          {{ range .Pages }}
+              {{/* The context, ".", is now each one of the pages as it goes through the loop */}}
+              {{ partial "li_card" . }}
+          {{ end }}
+
           {{ partial "tags.html" . }}
 
           {{ if site.Params.docs_section_pager }}
