@@ -16,8 +16,9 @@
     {{ $page := . }}
     {{ $project := .File.ContentBaseName }}
 
-    {{ $items := where (where site.RegularPages "Type" "post") ".Params.projects" "intersect" (slice $project) }}
+    {{ $items := where (where site.RegularPages "Type" "journal") ".Params.projects" "intersect" (slice $project) }}
     {{ $count := len $items }}
+
     {{ if ge $count 1 }}
     <h2>{{ (i18n "posts") }}</h2>
     {{ range $items }}

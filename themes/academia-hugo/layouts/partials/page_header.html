@@ -5,8 +5,8 @@
 {{/* Set default titles for node pages */}}
 {{ $title := .Title }}
 {{ if and (not $title) .IsNode }}
-{{ if eq .Type "post" }}
-{{ $title = i18n "posts" }}
+{{ if eq .Type "journal" }}
+{{ $title = i18n "journal" }}
 {{ else if eq .Type "talk" }}
 {{ $title = i18n "talks" }}
 {{ else if eq .Type "publication" }}
@@ -15,7 +15,6 @@
 {{end}}
 
 {{/* Header image */}}
-
 
 {{/* Featured image */}}
 {{ if and $featured (not .Params.image.preview_only) }}
