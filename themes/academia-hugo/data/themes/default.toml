@@ -5,13 +5,13 @@ name = "Default"
 light = true
 
 # Primary
-primary = "#fc6f5c"
+primary = "#6c1d5f"
 
 # Menu
 menu_primary = "#fff"
-menu_text = "#34495e"
-menu_text_active = "#fc6f5c"
-menu_title = "#2b2b2b"
+menu_text = "#56676b"
+menu_text_active = "#6c1d5f"
+menu_title = "#56676b"
 
 # Home sections
 home_section_odd = "rgb(255, 255, 255)"
