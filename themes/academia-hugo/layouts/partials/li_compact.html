@@ -5,7 +5,7 @@
 {{ $show_buttons := false }}
 
 {{/* Dynamic view adjusts to content type. */}}
-{{ if eq $item.Type "post" }}
+{{ if eq $item.Type "journal" }}
 {{ $microdata_type = "BlogPosting" }}
 {{ else if eq $item.Type "talk" }}
 {{ $microdata_type = "Event" }}

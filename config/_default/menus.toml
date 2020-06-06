@@ -10,7 +10,7 @@
 
 [[main]]
   name = "Weekly Journal"
-  url = "/posts"
+  url = "/journal"
   weight = 20
 
 [[main]]

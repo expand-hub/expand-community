@@ -1,5 +1,5 @@
 ---
-title: Posts
+title: Weekly Journal
 
 # View.
 #   1 = List
@@ -12,3 +12,5 @@ header:
   caption: ""
   image: ""
 ---
+
+This is a test, lorem ipsum stuff
