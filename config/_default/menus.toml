@@ -27,3 +27,39 @@
   name = "Contact"
   url = "#contact"
   weight = 50
+
+[[main]]
+  parent = "Knowledge Center"
+  name = "Overview"
+  url = "/knowledge-center"
+  weight = 10
+
+[[main]]
+  parent = "Knowledge Center"
+  name = "(Visual) collaboration"
+  url = "/knowledge-center/collaboration"
+  weight = 20
+
+[[main]]
+  parent = "Knowledge Center"
+  name = "Engineering culture"
+  url = "/knowledge-center/engineering-culture"
+  weight = 20
+
+[[main]]
+  parent = "Knowledge Center"
+  name = "Organisational design"
+  url = "/knowledge-center/organisational-design"
+  weight = 20
+
+[[main]]
+  parent = "Knowledge Center"
+  name = "Socio-technical systems"
+  url = "/knowledge-center/socio-technical"
+  weight = 20
+
+[[main]]
+  parent = "Knowledge Center"
+  name = "Software architecture"
+  url = "/knowledge-center/software-architecture"
+  weight = 20

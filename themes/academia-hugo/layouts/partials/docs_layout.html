@@ -29,10 +29,23 @@
             {{ .Content }}
           </div>
 
-          {{ range .Pages }}
-              {{/* The context, ".", is now each one of the pages as it goes through the loop */}}
-              {{ partial "li_card" . }}
-          {{ end }}
+          {{ if and (gt (len .Pages) 0) (not .Params.docs_introduction) }}
+            <div class="row justify-content-left">
+            {{ range .Pages }}
+              <div class="col-lg-6 col-md67 mb-4">
+              {{ partial "knowledge_li_card" . }}
+              </div>
+            {{end}}
+            </div>
+          {{ else if gt (len .Pages) 0 }}
+            <div class="row justify-content-left">
+              {{ range .Pages }}
+                <div class="col-lg-6 col-md67 mb-4">
+                {{ partial "li_list" . }}
+                </div>
+              {{end}}
+            </div>  
+          {{end}}
 
           {{ partial "tags.html" . }}
 
