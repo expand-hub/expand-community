@@ -6,13 +6,16 @@
   {{ with .Content }}
   <div class="article-style" itemprop="articleBody">{{ . }}</div>
   {{ end }}
-  <ul class="list-unstyled">
+    
     {{ if gt (len .Sections) 0}}
-    {{ range .Sections }}
-    <li class="p-4 shadow-sm mb-4 card rounded-0"><h5><a class="stretched-link" href="{{.RelPermalink}}">{{.LinkTitle}}</a></h5> {{with .Params.summary}}<p>{{. | plainify | emojify}}</p>{{end}}</li>
+      <div class="row justify-content-left">
+      {{ range .Sections }}
+        <div class="col-lg-6 col-md67 mb-4">
+        {{ partial "knowledge_li_card" . }}
+        </div>
+      {{end}}
+      </div>
     {{end}}
-    {{end}}
-  </ul>
 </div>
 
 {{- end -}}
