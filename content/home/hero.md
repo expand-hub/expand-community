@@ -34,12 +34,12 @@ hero_media = "expand-window-logo.jpg"
 #   Display link(s) by specifying a URL and label below. Icon is optional for `[cta]`.
 #   Remove a link/note by deleting a cta/note block.
 [btn]
-  url = "/authors/admin"
+  url = "/community"
   label = "Know more"
   
 [btn_alt]
   url = "#contact"
-  label = "Contact me"
+  label = "Contact us"
 
 +++
 ## We are **Expand**, a community of like-minded people who bring together every IT discipline 
