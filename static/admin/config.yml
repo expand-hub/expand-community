@@ -73,10 +73,10 @@ collections:
         name: "user_groups"
         required: false
         widget: "list"
-  - name: posts
-    label: Posts
-    label_singular: Post
-    folder: 'content/post'
+  - name: journal
+    label: Journal
+    label_singular: Journal
+    folder: 'content/journal'
     path: '{{slug}}/index'
     create: true  # Allow users to create new documents in this collection
     fields:  # The fields each document in this collection have
